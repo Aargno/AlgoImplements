@@ -1,0 +1,2 @@
+This repository will contain implementations of various algorithms that I've
+come across, separated by folder into the language they were implemented in.
