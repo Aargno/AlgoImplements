@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /*
-Class imlementing counting sort. Sort makes use of function to get range of values
+Class implementing counting sort. Sort makes use of function to get range of values
 and lowest value to help minimise the space needed for count array.
 Main method can be altered to test with different settings.
 */
@@ -62,6 +62,10 @@ public class CountingSort {
     int[] sorted = new int[len];
     for (int i = 0; i < len; i++) {
       arr[i] = rand.nextInt((932 - 149) + 1) + 149; //Lower inclusive upper exclusive
+      //Sort works best with range of values not drastically larger than number
+      //of elements to be sorted.
+      //Benefit over my implementation of quicksort: Can handle ranges drastically smaller
+      //than size of data set well.
     }
     printArray(arr);
     countSort(arr, sorted);
