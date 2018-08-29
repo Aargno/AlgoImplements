@@ -100,7 +100,10 @@ public class QuickSort {
     Random rand = new Random();
     for(int i = 0; i < testLen; i++) {
       testArr[i] = rand.nextInt(testLen/100); //Used to keep reasonable range for large test Length
-      //Range too small for array length causes stack overflow
+      //Range too small for array length causes stack overflow due to large chance of partitions
+      //of array having vastly different sizes, if a value in the middle of the range isn't chosen.
+      //Problem could be mitigated using an alternate pivot selection method, maybe looking for
+      //a pivot within a certain space of the range
     }
     printArray(testArr); //For demonstration, not recomended to keep
     quickSort(testArr, 0, testLen - 1);
