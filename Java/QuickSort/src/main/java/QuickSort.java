@@ -40,27 +40,6 @@ public class QuickSort {
     if (q + 1 < hi) quickSort(arr, q + 1, hi);
   }
 
-  // private static void quickSort(int[] arr, int lo, int hi) {
-  //   if (lo >= hi) return; //Terminating condition for recrusive calls
-  //   if (lo == hi-1) { //Alternate terminating condition to simplify the sort on a 2 length array
-  //     if (arr[lo] > arr[hi]) swap(arr, lo, hi);
-  //     return;
-  //   }
-  //   int pivot = arr[(lo + hi)/2]; //Selecting the middle value of the array as pivot
-  //   int left = lo;
-  //   int right = hi;
-  //   while (left < right) { //Loop runs until left pointer has reached right pointer
-  //     while (arr[left] < pivot) left++;
-  //     while (arr[right] > pivot) right--;
-  //     swap(arr, left, right); //Swap values at left and right pointers
-  //     if (arr[left] == pivot && arr[right] == pivot && left != right) { //Handles cases where the left and right pointer are on seperate values equal to pivot, prevents issues when duplicate values are present
-  //       left++; //Only use left++ or right--, otherwise some values are skipped and not sorted properly
-  //     }
-  //   }
-  //   quickSort(arr, lo, right - 1); //Recursive calls to split array, left or right can be used, as they should always be on the same value
-  //   quickSort(arr, right + 1, hi);
-  // }
-
   private static void checkInOrder(int[] arr) {
     //Simple test method to test large arrays are in order
     int min = -1;
