@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Beastify",
+  "version": "1.0",
+
+  "description": "Adds a broswer action to the toolbar. Clik the button to choose a beast. The active tabs body si replaced with a picture of the beast.",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Beastify",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
+  ]
+
+}
