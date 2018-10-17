@@ -62,7 +62,6 @@ public class RadixSort {
     Random rand = new Random();
     int len = 100;
     int[] arr = new int[len];
-    int[] sorted = new int[len];
     int max = 100;
     int min = -100;
     for (int i = 0; i < len; i++) {
