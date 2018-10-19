@@ -4,7 +4,8 @@ html, body {
 
 textarea {
     height: 8em;
-    width: 75em;
+    width: 15em;
+    resize: none;
 }
 
 .hidden {
