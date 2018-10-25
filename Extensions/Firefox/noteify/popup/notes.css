@@ -36,19 +36,19 @@ textarea {
     background-color: red;
 }
 
-.title {
+#title {
     text-align: center;
     font-size: 2em;
 }
 
-.input:hover {
+#input:hover {
     background-color: #ECEDEA;
 }
 
-.input:focus {
+#input:focus {
     background-color: #D3D5CF;
 }
 
-.input {
+#input {
     background-color: white;
 }

@@ -6,15 +6,16 @@
     "description": "Adds a browser action to the toolbar that when will open a pop-up that will allow a user to enter notes about the webpage they are visiting",
 
     "icons": {
-        "48": "icons/temp-48.png"
+        "48": "icons/note-48.png"
     },
 
     "permissions": [
-        "tabs"
+        "activeTab",
+        "storage"
     ],
 
     "browser_action": {
-        "default_icon": "icons/temp-32.png",
+        "default_icon": "icons/note-48.png",
         "default_title": "Noteify",
         "default_popup": "popup/notes.html"
     }
