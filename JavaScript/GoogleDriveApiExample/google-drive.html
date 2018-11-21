@@ -1,0 +1,17 @@
+<!-- Code taken from: https://developers.google.com/drive/api/v3/quickstart/js -->
+<!-- For this to work you need to initialise a http server on localhost:8000 I use python -m http.server -->
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <!-- <link rel = "stylesheet" href = "notes.css"> -->
+  </head>
+  <body>
+    <script src = "google-drive.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <button id="signin-button" onclick="handleSignInClick()">Sign In</button>
+    <button id="signout-button" onclick="handleSignOutClick()">Sign Out</button>
+  </body>
+</html>

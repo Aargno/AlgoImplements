@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "drive_practice",
+    "version": "1.0",
+
+    "description": "Practice using drive api",
+    "homepage_url": "https://bytutorial.com/tutorials/google-api/introduction-to-google-drive-api-using-javascript",
+
+    "icons": {
+        "48": "icons/note-48.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/note-48.png",
+        "default_title": "Drive Practice",
+        "default_popup": "google-drive.html"
+    }
+
+}

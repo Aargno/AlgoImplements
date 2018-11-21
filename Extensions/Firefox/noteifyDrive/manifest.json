@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "noteifyDrive",
+    "version": "1.0",
+
+    "description": "Adds a browser action to the toolbar that when will open a pop-up that will allow a user to enter notes about the webpage they are visiting",
+
+    "icons": {
+        "48": "icons/note-48.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "content_security_policy": "script-src 'self' https://apis.google.com/js/api.js; object-src 'self'; script-src 'self' 'sha256-EEA35C1679244D4567AC46AC619CE035FDA66EE81AB638483DF29D08DBE294E4'; object-src 'self",
+
+    "browser_action": {
+        "default_icon": "icons/note-48.png",
+        "default_title": "Noteify",
+        "default_popup": "popup/notes.html"
+    }
+
+}
