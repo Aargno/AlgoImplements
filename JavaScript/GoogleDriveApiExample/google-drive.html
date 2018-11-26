@@ -1,5 +1,6 @@
 <!-- Code taken from: https://developers.google.com/drive/api/v3/quickstart/js -->
 <!-- For this to work you need to initialise a http server on localhost:8000 I use python -m http.server -->
+<!-- Requirement of http server on local host may be issue, need to find way to allow to run from browser bar -->
 <html>
   <head>
     <meta charset = "utf-8">
@@ -7,11 +8,15 @@
   </head>
   <body>
     <script src = "google-drive.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js"
+    <!-- Script block below ensures gapi loads in time -->
+    <script async defer src="https://apis.google.com/js/api.js" 
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
+    <!-- Script block above may be secret to making sure gapi loads to use in extension, may just need to figure out which url to use for app host -->
     <button id="signin-button" onclick="handleSignInClick()">Sign In</button>
     <button id="signout-button" onclick="handleSignOutClick()">Sign Out</button>
+    <button id="console-list-files" onclick="listFiles()">List Files</button>
+    <!-- Button on click will probably need to be replaced with event listeners in js file -->
   </body>
 </html>
