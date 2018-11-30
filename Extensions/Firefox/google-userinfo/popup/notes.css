@@ -28,6 +28,14 @@ textarea {
     background-color: cyan;
 }
 
+.page:hover {
+    background-color: darkcyan;
+}
+
+.page {
+    background-color: cyan;
+}
+
 .delete:hover {
     background-color: darkred;
 }
